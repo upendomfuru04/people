@@ -163,25 +163,32 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 .typo-light span,
 .typo-light small{  color: #fff;}
 
-
-
-.myDiv{
-	background: #d0e4a9;
-	text-align: left;
-	padding-left: 4rem;
+.image { 
+   position: relative;
+   width: 100%; 
+   
 }
 
-.myDiv h2{
+
+ .image h2{
+ 	 position: absolute; 
+   top: 100px; 
+   left: 30px; 
+   width: 100%;
 	color: #334;
 	font-size: 42px;
 }
 
-.myDiv p{
+ .image p{
+ 	 position: absolute; 
+   top: 150px; 
+   left: 30px; 
+   width: 100%;
 	color: #334;
 	font-size: 15px;
 
 }
-.btn{
+.image .btn{
 	display: inline-block;
 	margin-top: 1rem;
 	padding: 1rem 3rem;
@@ -191,9 +198,12 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 	text-transform: capitalize;
 	color: #334;
 	border: .2rem solid #334;
+	position: absolute; 
+   top:200px; 
+   left: 30px; 
 }
 
-.btn:hover{
+.image .btn:hover{
 	background: #d6bd70;
 	border-color: #d6bd70;
 	color: #fff;
@@ -201,20 +211,64 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 }
 
 
-.myDiv h4{
+.image  h4{
 	color: #334;
 	font-size: 23px;
 	padding-top: 12px;
+	position: absolute; 
+   top: 60px; 
+   left: 30px; 
+   width: 100%;
 }
+
+.back{ 
+	color: white; 
+	background-color:#e5e5e5; 
+	margin: 2px; 
+	font-size: 25px; 
+} 
+
+
+
+
 .flex-container{
-	display: flex;
+	display: grid;
+	
+	grid-row-gap: 20px;
+	grid-column-gap: 20px
 }
 
-.flex-container > div{
-	margin: 9px;
-	padding: 5px;
+.item{
+	background-color: purple;
+	border: 1px solid #e5e4e9;
+	text-align: left;
+	padding-left: 22px;
+
 
 }
+
+p{
+	font-size: 12px;
+}
+.button {
+  background-color: purple;
+  border: none;
+  color: purple;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  margin: 3px 2px;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color:purple; 
+  color: white; 
+  border: 2px solid #f44336;
+}
+
 
 
 @media screen and (max-width: 1200px){
@@ -252,15 +306,6 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 		width: 200px;
 	}
 
-	.flex-container{
-	display: flex;
-}
-
-.flex-container > div{
-	margin: 6px;
-	padding: 2px;
-
-}
 }
 
 	</style>
@@ -313,26 +358,123 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
   </div>  
 </nav>
 
-<div class="myDiv">
+
+<div class="image">
+      <img style="width: 100%" src="alex.jpg" alt="" />
 	<h4>A UNIVERSITY THAT</h4>
 	<h2>WORKS FOR YOU</h2>
-	<b><p>Our 100% online, tution-free<br>
-		degree programs are <br>designed to fit your life</p></b>
+	<b><p>Our 100% online, tution-free
+		degree <br>programs are designed to fit your life</p></b>
 
 		<button class="btn" ><b>GET STARTED</b> </button>
 
-		<br>
-		<br>
 </div>
+
+<section>
+<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<img style="width: 100%" src="twoo.jpg">
+
+</div>
+</section>
+
+	<div class="back">
+	<br> 
+<br></div> 
 
 
 
 <section>
-<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<img style="width: 70%" src="off.jpg">
+	<h1 style="font-size: 41px; margin-bottom: 5px; color: #2f2e29 !important; text-align: left;">Quality Meets Online Degree Programs</h1>
+	<p><span class="NormalTextRun SCXW93868980 BCX0">Our academic leadership have created high-quality, affordable programs that will prepare you for success in the job market.</span></p>
+<div class="flex-container">
+	<div class="item">
+		<br>
+
+        <img width="50" height="40" src="Group-360.png" />
+        <br><br>
+<div class="wpb_text_column wpb_content_element  vc_custom_1640270444444">
+<div class="wpb_wrapper">
+<h3  ><a style="color:white;" href="#">BUSINESS ADMINISTRATION </a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1568533060992">
+<div class="wpb_wrapper">
+<p>Students will gain comprehensive knowledge of business theory and practical application in today’s versatile and challenging business world.</p>
+</div>
+</div>
+<button class="button button3">MBA</button>
+<button class="button button3">Bachelor's Degree</button>
+<button class="button button3">Associate's Degree</button>
+<br>
+  
+    </div>
+	<div class="item">
+		<br>
+		<img width="50" height="40" src="Group-430.png">
+		<div class="wpb_text_column wpb_content_element  vc_custom_1640270459996">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">COMPUTER SCIENCE </a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1568533153313">
+<div class="wpb_wrapper">
+<p>Provides the foundation and technical tools required for success in the high-tech industry encompassing both hardware, architecture, and software.</p>
+</div>
+</div>
+<button class="button button3">Master's Degree Bachelor's</button>
+<button class="button button3">Degree Associate's Degree</button>
+ 	<br>
+		</div>
+		<div class="item">
+		<br>
+			<img width="50" height="40" src="Group-430.png">
+			<div class="wpb_text_column wpb_content_element  vc_custom_1640270472715">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">HEALTH SCIENCE</a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1572768052666">
+<div class="wpb_wrapper">
+<p>Gain knowledge, skills, and hands-on experience that are instrumental to working as a health care professional in this complex and evolving industry.</p>
+</div>
+</div>
+<button class="button button3">Bachelor's Degree</button>
+<button class="button button3">Associate's Degree</button>
+<br>
+ 
+		</div>
+	<div class="item">
+		<br>
+		<img idth="50" height="40" src="Group-431.png">
+		<div class="wpb_text_column wpb_content_element  vc_custom_1640270491162">
+<div class="wpb_wrapper">
+	<br>
+<h3><a style="color:white;" href="#">EDUCATION</a></h3>
+</div>
+</div>
+<div class="wpb_text_column wpb_content_element  vc_custom_1572768535978">
+<div class="wpb_wrapper">
+<p>In collaboration with the IB, our online Master’s Degree Program will help you develop effective skills to become part of the next generation of highly-skilled teachers.</p>
+</div>
+</div>
+<button class="button button3">Master of Education</button>
+<br>
+</div>
+</section>
+
+<section>
+	<h1 class="heading">WHY
+		<span>UOPEOPLE?</span></h1>
+
+</div>	
 
 </div>
 </section>
+
+
+
 
 
 
@@ -341,7 +483,7 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 		<span>WORK AT</span></h1>
 
 		<div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<img style="width: 70%;align-items: center;" src="foo.jpg">
+	<img style="width: 100%;align-items: center;" src="foo.jpg">
 
 </div>
 </section>
@@ -358,10 +500,10 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 <section>
 	<h1 class="heading">FIND OUT
 		<span>MORE</span></h1>
-<div class="flex-container">
-	<div><img style="width: 72px;" src="1.jpg"></div>
-		<div><img style="width: 72px;" src="2.jpg"></div>
-	<div><img style="width: 72px;" src="3.jpg"></div>
+<div style="display: inline-flex; padding-left: 22px;" class="flex-container">
+	<div><img style="width: 120px;" src="1.jpg"></div>
+		<div><img style="width: 120px;" src="2.jpg"></div>
+	<div><img style="width: 120px;" src="3.jpg"></div>
 
 </div>
 </section>
@@ -426,7 +568,7 @@ footer.light .footer-copyright{ background: none repeat scroll 0 0 rgba(255, 255
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<img style="width: 70%" src="picture.jpg">
+	<img style="width: 100%" src="picture.jpg">
 
 </div>
 
